@@ -1,0 +1,51 @@
+.crystals{
+    clear: both;
+    padding:20px 0;
+}
+.crystal{
+    width: 80px;
+    height: 70px;
+    margin: 15px;
+    padding:5px;
+    display: inline-block;
+    cursor: pointer;
+
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 3px 3px rgba(0,0,0,.25);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+}
+.crystal.disabled{
+    opacity:0;
+    transform: perspective(100px) rotate3d(180,30,30,235deg);
+}
+.crystal:hover{
+    transform: perspective(100px) rotate3d(180,30,30,35deg);
+}
+#crystal1{
+    background: #fff url('../images/crystals/1.jpg') center no-repeat;
+}
+#crystal2{
+    background: #fff url('../images/crystals/2.jpg') center no-repeat;
+}
+#crystal3{
+    background: #fff url('../images/crystals/3.jpg') center no-repeat;
+}
+#crystal4{
+    background: #fff url('../images/crystals/4.jpg') center no-repeat;
+}
+.goal{
+    font-size: 36px;
+    border: 1px solid green;
+    padding:15px;
+    margin:20px 10px 20px 0;
+    display: inline-block;
+}
+#current_score{
+    font-size: 36px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xml:lang="ru" lang="ru">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="robots" content="index, follow" />
+
+        <link href="./assets/css/reset.css" type="text/css" rel="stylesheet" />
+        <link href="./assets/css/style.css" type="text/css" rel="stylesheet" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+        <title>Crystals</title>
+
+    </head>
+    <body>
+    <h1>Crystals Collector!</h1>
+    <div class="rules">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are <span id="crystals_count"></span> crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+    <div class="game_area">
+        <div class="goal"></div>
+        <div class="scoreboard"></div>
+        <div class="crystals">
+            <div id="crystal1" class="crystal disabled" attr-id="1"></div>
+            <div id="crystal2" class="crystal disabled" attr-id="2"></div>
+            <div id="crystal3" class="crystal disabled" attr-id="3"></div>
+            <div id="crystal4" class="crystal disabled" attr-id="4"></div>
+        </div>
+
+        <div class="your_score_is">
+            <h3>Your total score is:</h3>
+            <div id="current_score"></div>
+        </div>
+
+    </div>
+
+
+    </body>
+</html>
